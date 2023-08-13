@@ -8,6 +8,6 @@ console.log(tipAmount)
 //console.log(fruit)
 
 food = prompt("how much was the food?")
-tipPercentage = 0.2
+tipPercentage = prompt("tip % ?")/100
 tipAmount = food * tipPercentage
 console.log(tipAmount)
