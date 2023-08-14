@@ -10,10 +10,19 @@
 // math=Math.round(4.5)
 // console.log(math)
 
-let weather = 'rain'
-if (weather == 'rain') {
-    console.log('grab umbrella')
-}
-else {
-    console.log('wear sunglasses ')
-}
+// let weather = 'rain'
+// if (weather == 'rain') {
+//     console.log('grab umbrella')
+// }
+// else {
+//     console.log('wear sunglasses ')
+// }
+//function
+// function greeting(name)
+// {
+//     console.log(`hi ${name}, nice to meet you`)
+// }
+// greeting("Pratima")
+
+
+
