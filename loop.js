@@ -21,9 +21,19 @@
 // }
 
 // example3
-const numbers = [1, 2, 3, 4, 5, 6]
-let result = []
-for (const number of numbers) {
-    result.push(number * 2)
+// const numbers = [1, 2, 3, 4, 5, 6]
+// let result = []
+// for (const number of numbers) {
+//     result.push(number * 2)
+// }
+// console.log(result)
+
+// function
+const double = (numbers) => {
+    let result = []
+    for (const number of numbers) {
+        result.push(number ** 2) // **for squaring number 
+    }
+    return result
 }
-console.log(result)
+console.log(double([1, 2, 3, 4, 5, 6]))
