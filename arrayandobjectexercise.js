@@ -40,3 +40,52 @@
 // }
 // const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // console.log(sumArray(nums))
+
+//finding max number
+// const max = (numbers) =>{
+//     let result = numbers[0]
+//     for(const number of numbers){
+//         if(number>result){
+//             result = number
+//         }
+//     }
+//     return {result}
+// }
+// console.log(max([1,4,7,3,9,2,44,5,0,56,3,2]))
+
+// calculate frequency
+// const letterFrequency = (phrase) =>
+// {let frequency = {}
+// for (const letter of phrase){
+//     //check if letter exists in frequency
+//     if(letter in frequency ){
+//         //increment the value by +1
+//         frequency[letter] +=1
+//     }
+//     else {
+//         //otherwise, set the value to 1
+//         frequency[letter]=1
+//     }
+// }
+//  return frequency  
+// }
+//  console.log(letterFrequency("haha"))
+
+// word frequency
+const wordFrequency = (phrase) => {
+    let frequency = {}
+    words = phrase.split(' ')
+    for (const word of words) {
+        console.log(word)
+        if (word in frequency) {
+            frequency[word] += 1
+        }
+        else {
+            frequency[word] = 1
+        }
+    }
+    console.log(words)
+    return frequency
+}
+const userinput = prompt("write your phrase")
+console.log(wordFrequency(userinput))
