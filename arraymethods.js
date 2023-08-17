@@ -57,7 +57,15 @@ const filter = (numbers, greaterThan) => {
 //reduce loops and gives you back the accumulator
 
 //example
-const nums = [1, 2, 3]
-nums.reduce(function (prev, nex) {
-    console.log(nex)
+// const nums = [5, 7, 8, 1, 2, 3]
+// nums.reduce(function (prev, nex) {
+//     console.log(nex)
+// })
+
+
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+result = nums.reduce((prev, nex) => {
+    return prev + nex
 })
+console.log(result)
