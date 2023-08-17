@@ -33,10 +33,31 @@ greenDiv.onclick = () => console.log("You clicked green")
 const squares = document.querySelectorAll(".colorSquare")
 // console.log(squares)
 
-console.log(squares[0].value)
+// console.log(squares[0].value)
 
 //foreach loop====The forEach() method of Array instances executes a provided function once for each array element.
 
+// squares.forEach(square => {
+//     square.onclick = () => console.log(square.value)
+// })
+
+
+const timesClicked = { "red": 0, "yellow": 0, "green": 0 }
 squares.forEach(square => {
-    square.onclick = () => console.log(square.value)
+    square.onclick = () => {
+        timesClicked[square.value] += 1
+        square.innerText = timesClicked[square.value]
+    }
 })
+
+
+function clearScore() {
+    timesClicked.red = 0
+    timesClicked.yellow = 0
+    timesClicked.green = 0
+    squares.forEach(square => {
+        square.innerText = 0
+    })
+}
+const clearGamebtn = document.getElementById("clear-game")
+clearGamebtn.onclicked = () => clearScore()
